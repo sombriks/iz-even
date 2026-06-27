@@ -48,5 +48,15 @@ mod.addImport("iz_even", iz_even_dep.module("iz_even"));
 Just append the git tag in the url:
 
 ```bash
-zig fetch --save git+https://github.com/sombriks/iz-even.git#0.1.0
+zig fetch --save git+https://github.com/sombriks/iz-even.git#0.1.1
 ```
+
+## Noteworthy
+
+- I am still learning, need to figure out if there is a way to sync git tag 
+  with the project version in the build.zig.zon manifest file.
+- One thing being the build system and other being the public manifest looks 
+  very nice, since in theory i can use something else to build the project, 
+  like what happens nowadays in java packagtes in maven repos.
+- I am not sure who needs to hear this, but this is a joke package, do not 
+  import iz_even in your project.
