@@ -48,5 +48,5 @@ mod.addImport("iz_even", iz_even_dep.module("iz_even"));
 Just append the git tag in the url:
 
 ```bash
-zig fetch --save git+https://github.com/sombriks/iz-even.git@0.1.0
+zig fetch --save git+https://github.com/sombriks/iz-even.git#0.1.0
 ```
