@@ -1,2 +1,12 @@
 # iz-even
-example zig package, how to publish one 
+
+Example zig package, how to publish one 
+
+## Setup
+
+```bash
+mkdir iz-even
+cd iz-even
+zig init
+```
+
