@@ -1,7 +1,7 @@
 const std = @import("std");
 /// checks if a type is even
 pub fn izEven(a: anytype) bool {
-    return a % 2 == 0;
+    return @mod(a, 2) == 0;
 }
 
 test "shoud be true" {
@@ -11,5 +11,15 @@ test "shoud be true" {
 
 test "shoud be false" {
     const odd = !izEven(7);
+    try std.testing.expect(odd);
+}
+
+test "shoud be false floating point" {
+    const odd = !izEven(6.1);
+    try std.testing.expect(odd);
+}
+
+test "shoud be true floating point" {
+    const odd = !izEven(7.12);
     try std.testing.expect(odd);
 }
